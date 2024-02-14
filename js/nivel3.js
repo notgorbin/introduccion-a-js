@@ -89,12 +89,10 @@
     No te preocupés, no hace falta recordar todo esto ahora mismo!
 */
 
-
 /*
     Uff, muchas cosas nuevas! Volvamos a JavaScript y veamos como podemos
     interactuar con HTML.
 */
-
 
 /*
     Elementos de Acceso
@@ -124,10 +122,9 @@
 //       variable llamada nuestroTitulo.
 //       Utilizá console.log para ver lo que obtuviste!
 
+// const nuestroTitulo = document.querySelector("h1");
 
-
-
-
+// console.log(nuestroTitulo);
 
 /*
     Obteniendo elementos similares.
@@ -146,26 +143,20 @@
 
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
+const mediaLinks = document.querySelectorAll("li");
+// console.log(mediaLinks);
 
-
-
-
-
-// TAREA: Ahora utilizá console.log para ver la cantidad de 
+// TAREA: Ahora utilizá console.log para ver la cantidad de
 // elementos li que hay con mediaLinks.length
 
-
-
-
-
+// console.log(mediaLinks.length);
 
 // TAREA: ¿Te acordás de los bucles del nivel 2? Usando lo que sabés de ellos, realizá iteraciones
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
-
-
-
-
+// for (let i = 0; i < mediaLinks.length; i++) {
+//   console.log(mediaLinks[i]);
+// }
 
 /*
     Propiedades de los elementos
@@ -184,10 +175,8 @@
 // TAREA: Obtené el contenido de nuestro elemento 'h1'
 // y utilizá console.log para mostrarlo.
 
-
-
-
-
+const miTitulo = document.querySelector("h1");
+// console.log(miTitulo.textContent);
 
 /*
     Editar el contenido de la página
@@ -205,9 +194,7 @@
 
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
 
-
-
-
+// miTitulo.textContent = "Anashei";
 
 /*
     Editando atributos
@@ -218,15 +205,13 @@
     Ejemplo:
 
     const nuestroTwitter = document.querySelector('.twitter');
-    ourTwitter.id = "sorpresa";
+    nuestroTwitter.id = "sorpresa";
 */
 
 // TAREA: Actualizá el valor del atributo 'src' de nuestra etiqueta 'img' a "img/kittens.jpeg".
 
-
-
-
-
+const imagen = document.querySelector("img");
+imagen.src = "img/kittens.jpeg";
 
 /*
     Editando estilos
@@ -248,10 +233,7 @@
 
 // Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
 
-
-
-
-
+// miTitulo.style.backgroundColor = "blue";
 
 /*
    Creando nuevos nodos (Elementos)
@@ -261,7 +243,7 @@
 
     document.createElement('div'); // crea un nuevo elemento llamado 'div'.
     document.createTextNode('foobar'); // crea un nuevo texto que contiene 'foobar'
-    existingNode.appendChild(newNode); // agrega un newNode al final de existingNode.
+    existingNode. appendChild(newNode); // agrega un newNode al final de existingNode.
 
     Ejemplo:
 
@@ -278,13 +260,30 @@
 //
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
 
+const imgLogo = document.createElement("img");
+const cabecera = document.querySelector("header");
 
-
-
-
+imgLogo.src = "img/woman_bw.jpg";
+cabecera.appendChild(imgLogo);
 
 ////////////////////////////////////////////////////////////////////////////
 // ¡Felicidades! ¡Has terminado el Nivel 3 de JavaScript Básico!          //
 // Levántate, estira las piernas y celebra tu logro.                      //
 // ¡Creo que esto amerita un festejo!                                     //
 ////////////////////////////////////////////////////////////////////////////
+
+// const $botonIngreso = document.querySelector('#ingresar');
+
+// $botonIngreso.onclick = function(event){
+//     const edadUsuario = Number(document.querySelector('#edad-usuario').value);
+//     let textoResultado;
+//     if(edadUsuario >= 18) {
+//         textoResultado = 'Podés ingresar';
+//     } else {
+//         textoResultado = 'No podes ingresar';
+//     }
+
+//     document.querySelector('#resultado').innerText = textoResultado;
+
+//     return false;
+// }
