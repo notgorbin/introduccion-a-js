@@ -1,0 +1,19 @@
+.oculto {
+    display: none;
+}
+
+#contenedor-principal {
+    display: flex;
+    flex-direction: row;
+}
+
+#contenedor-form {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-right: 0px;
+}
+
+
+#contenedor-lista-videos {
+    margin-top: 10px; 
+}

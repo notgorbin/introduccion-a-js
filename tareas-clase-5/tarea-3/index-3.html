@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarea 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cálculo de Videos</h1>
+    <div id="contenedor-principal">
+        <div id="contenedor-form">
+            <h2 id="video-num">Video 1</h2>
+            <form>
+                <input id="horas" type="text" placeholder="Horas">
+                <input id="minutos" type="text" placeholder="Minutos">
+                <input id="segundos" type="text" placeholder="Segundos">
+                <input id="boton-agregar" type="submit" value="Agregar"><br><br>
+            </form>
+        </div>
+        <div id="contenedor-lista-videos">
+            <ol id="lista-videos" type="I"></ol>
+        </div>
+    </div>
+    <div id="contenedor-total" class="oculto">
+        <strong id="tiempo-total"></strong>
+        <input id="boton-calcular" type="button" value="Calcular tiempo total">
+    </div>
+    <script type="text/javascript" src="js-3.js"></script>
+</body>
+</html>
