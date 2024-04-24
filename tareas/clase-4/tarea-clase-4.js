@@ -1,9 +1,31 @@
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
 
+function tareaUno() {
+  for (let i = 3; i < 22; i++) {
+    if (i % 3 === 0 && i !== 3) {
+      console.log(i);
+    }
+    if (i >= 21) {
+      console.log("Acá termina la tarea 1.");
+    }
+  }
+}
 
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
+function tareaDos() {
+  let numerosParaRegistrar = 10;
+
+  while (numerosParaRegistrar >= 1) {
+    console.log(numerosParaRegistrar);
+    numerosParaRegistrar--;
+  }
+
+  if (numerosParaRegistrar <= 1) {
+    console.log("Acá termina la tarea 2.");
+  }
+}
 
 // TAREA: Ha llegado el momento de un ejercicio clásico: 'FizzBuzz'.
 // Cuenta del 1 al 50 e imprime los números:
@@ -19,3 +41,25 @@
 
 // Calcular el promedio de todos los números en un array de números. (y ponerlo en una función)
 // ej.: calcularPromedio([10,5,4,2,8])
+
+function tareaFizzBuzz() {
+  for (let i = 1; i <= 50; i++) {
+    const fizz = i % 3 === 0;
+    const buzz = i % 5 === 0;
+    const impresora =
+      fizz && buzz ? "FizzBuzz" : fizz ? "Fizz" : buzz ? "Buzz" : i;
+
+    console.log(impresora);
+  }
+}
+
+function calcularPromedio(array) {
+  let promedioArray;
+  let sumaItems = 0;
+  for (let i = 0; i < array.length; i++) {
+    sumaItems += array[i];
+  }
+
+  promedioArray = sumaItems / array.length;
+  return promedioArray;
+}

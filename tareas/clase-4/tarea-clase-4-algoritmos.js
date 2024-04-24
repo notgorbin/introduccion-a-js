@@ -107,7 +107,6 @@ Ejemplo:
 Desafío de programación #25: Crear una función que reciba dos arrays (arreglos) de números como argumentos y retorne un array con números que estén en uno u otro array, pero NO en ambos.
 Nota: Esto se llama "diferencia simétrica" entre conjuntos
 
-Desafío de programación #25: Crear una función que reciba dos arrays (arreglos) de números como argumentos y retorne un array con números que estén en uno u otro array, pero NO en ambos.
 Ejemplo:
   [1,2,3] y [3,7,11] debería devolver [1,2,7,11]
   [5,10,3] y [10,1] debería quedar como [5,3,1]
