@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tarea-Clase-6</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="calculador-edades">
+      <label for="cantidad-integrantes"
+        ><strong>Tarea 1:</strong> Ingrese la cantidad de integrantes</label
+      >
+      <input type="number" id="cantidad-integrantes" />
+      <button type="submit" id="siguiente-paso">Siguiente</button>
+
+      <div id="integrantes"></div>
+
+      <button type="button" id="calcular" class="oculto">Calcular</button>
+
+      <div id="analisis" class="oculto">
+        <p>La edad mayor es: <strong id="mayor-edad"></strong></p>
+        <p>La edad menor es: <strong id="menor-edad"></strong></p>
+        <p>El promedio de edad es: <strong id="promedio-edad"></strong></p>
+      </div>
+
+      <button type="reset" id="boton-reinicio">Reiniciar</button><br /><br />
+      <button type="button" id="tarea-salarios" class="">Tarea Salarios</button>
+    </form>
+    <form id="calculador-salarios" class="oculto">
+      <label for="cantidad-familiares"
+        ><strong>Tarea 2:</strong> Ingrese la cantidad de integrantes
+        nuevamente</label
+      >
+      <input type="number" id="cantidad-familiares" />
+      <button type="submit" id="paso-siguiente">Siguiente</button>
+
+      <div id="familiares"></div>
+
+      <br /><br /><button type="button" id="calcular-salarios" class="oculto">
+        Calcular
+      </button>
+
+      <div id="salarios" class="oculto">
+        <p>
+          El salario anual más alto es:
+          <strong id="salario-anual-mayor"></strong>
+        </p>
+        <p>
+          El salario anual más bajo es:
+          <strong id="salario-anual-menor"></strong>
+        </p>
+        <p>
+          El salario anual promedio es:
+          <strong id="salario-anual-promedio"></strong>
+        </p>
+        <p>
+          El salario mensual promedio es:
+          <strong id="salario-mensual-promedio"></strong>
+        </p>
+      </div>
+      <button type="reset" id="reinicio">Reiniciar</button>
+    </form>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script2.js"></script>
+  </body>
+</html>
